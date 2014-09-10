@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope
     xmlns:SOAP-ENV="<%= envelope.soap_env%>"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     <% if (envelope.namespaces !== null) { %>
         <% _.each(envelope.namespaces, function(namespace) { %>
             <% if (namespace.full !== void 0) { %>
